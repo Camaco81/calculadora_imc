@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora De IMC</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<div class="flex flex-col justify-center items-center">
+		<div id="calculadoraIMC" class="p-8 m-4 flex flex-col justify-center
+		items-center shadow-lx border-2 border-violet-800">
+		<h1 class="text-3xl text-violet-900 font-semibold">{{titulo}}</h1>
+		<br>
+		<input v-model="altura" type="text" placeholder="Ingrese su altura en cm" class="border border-gray-500 py-2 px-4">
+		<br>
+		<input v-model="peso" type="text" placeholder="Ingrese su peso en kg" class="border border-gray-500 py-2 px-4">
+		<br>
+		<button @click="calculadoraIMC" class="px-4
+		py-4  border-4 border-violet-700 rounded text-violet-900 font-semibold hover:bg-violet-700 hover:text-white">Calcular IMC</button>
+		<p class="text-violet-900 m-4">{{resultado}}</p>
+	</div>
+		
+	</div>
+
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="script_vue.js"></script>
+	
+</body>
+</html>   
